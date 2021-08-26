@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Assignment 2</title>
+</head>
+<body>
+
+	<h3>Arranging team names in descending order with respect to the team members given</h3>
+	<br>
+
+	<div id="demo"></div>
+
+	<script type="text/javascript">
+		let qTeams = 
+		[
+		    {team: "aaiec", val: 400}, 
+		    {team: "aaiwc", val: 60}, 
+		    {team: "qai", val: 200}, 
+		    {team: "poc", val: 100},
+		    {team: "gtm", val: 50},
+		    {team: "hr", val: 10}
+		];
+		// qTeams[key].sort(function(a, b){return b-a});
+		// document.getElementById("demo").innerHTML = Object.keys(qTeams);
+		let res = qTeams.sort((a, b) => parseInt(b.val) - parseInt(a.val));
+
+		console.log(res);
+	</script>
+
+</body>
+</html>
